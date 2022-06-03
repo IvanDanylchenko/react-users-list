@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.userItem {
+  display: flex;
+  list-style-type: none;
+  max-width: 70%;
+  min-width: 320px;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.userImg {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.trashCircle {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 5px;
+}
