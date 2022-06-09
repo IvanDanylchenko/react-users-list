@@ -28,8 +28,10 @@
   padding: 50px;
 }
 
-.trashCircle {
+.usersListBtn {
   cursor: pointer;
   margin-left: auto;
   margin-right: 5px;
+  border: none;
+  background: none;
 }

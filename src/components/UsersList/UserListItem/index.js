@@ -4,7 +4,8 @@ import TrashCircleIcon from 'mdi-react/TrashCircleIcon';
 function UsersListItem (props) {
   const {
     user: { imgSrc, firstName, lastName, age, creator, isSelected },
-    selectUser, removeUsers,
+    selectUser,
+    removeUsers,
   } = props;
 
   const liStyle = {
@@ -28,11 +29,9 @@ function UsersListItem (props) {
         </h1>
         <p>{creator}</p>
       </div>
-      <TrashCircleIcon
-        className={styles.trashCircle}
-        size={40}
-        onClick={() => removeUsers()}
-      />
+      <button className={styles.usersListBtn} onClick={() => removeUsers()}>
+        <TrashCircleIcon size={40} />
+      </button>
     </li>
   );
 }

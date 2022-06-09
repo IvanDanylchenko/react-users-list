@@ -1,6 +1,6 @@
 import UsersListItem from '../UsersList/UserListItem';
 
-function UsersList ({ users, setUsers, setUsersList }) {
+function UsersList ({ users, setUsers }) {
   const mapUser = (u, index) => {
     const selectUser = () => {
       const newUsers = [...users];
@@ -9,9 +9,9 @@ function UsersList ({ users, setUsers, setUsersList }) {
     };
 
     const removeUsers = () => {
-      const newUsersList = [...users];
-      newUsersList.splice(index, 1);
-      setUsersList(newUsersList);
+      const newUsers = [...users];
+      newUsers.splice(index, 1);
+      setUsers(newUsers);
     };
 
     return (

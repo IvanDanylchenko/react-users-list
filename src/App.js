@@ -61,17 +61,12 @@ class App extends Component {
     this.setState({ users: newUsers });
   };
 
-  setUsersList = newUsersList => {
-    this.setState({ users: newUsersList });
-  };
-
   render () {
     const { users } = this.state;
     return (
       <UsersList
         users={users}
         setUsers={this.setUsers}
-        setUsersList={this.setUsersList}
       />
     );
   }
